@@ -11,6 +11,7 @@ func LoadEnvVariables() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error While Loading .env File , Please Check if the file exists")
+	} else {
+		fmt.Println("Succesfully Loaded ENV Variables")
 	}
-	fmt.Println("Succesfully Loaded ENV Variables")
 }
